@@ -130,14 +130,17 @@ html, body {
 .demoInput {
   margin: 0.5em 0 0.5em 0;
   display: inline-block;
-  width: 16em;
+  /*width: 40em;*/
   font-size: 1.3em;
 }
 
 .notes {
   height: 4em;
   font-size: 0.7em;
-  width: 15em;
+  width: 32em;
+}
+.inputWidth {
+  width: 22em;
 }
 
 
@@ -165,7 +168,7 @@ html, body {
     margin-right: 0em;
   }
   .leftSide.col-xs-12.col-md-8 {
-    text-align:left;
+    text-align:center;
     border-right: none;
   }
   .modal-content {
@@ -173,8 +176,8 @@ html, body {
     margin-top: 7.5em;
     margin-left: -1.5em;
     position:relative;
-    height: 18em;
-    width: 50em;
+    height: 20em;
+    width: 60em;
     font-size: 1em;
   }
   .demoHeader {
@@ -182,7 +185,6 @@ html, body {
   }
   .demoInput {
     display: inline-block;
-    width: 12em;
     font-size: 1.2em;
   }
 
@@ -280,6 +282,9 @@ html, body {
   .close {
     margin-right: 0.5em;
     font-size: 2em;
+  }
+  .notes{
+    width: 14.5em;
   }
 
 }

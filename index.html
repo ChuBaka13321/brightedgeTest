@@ -95,6 +95,7 @@
   </body>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script>
+    //storeDetails to localStorage;
     function storeDetails() {
       var person = document.getElementById('lname').value + ', '  + document.getElementById('fname').value;
       var company = document.getElementById('company').value;
@@ -108,7 +109,6 @@
         'revenue' : revenue,
         'notes' : notes
       }
-      console.log('personInfo' ,personInfo)
       localStorage.setItem(person, personInfo);
     }
   </script>
