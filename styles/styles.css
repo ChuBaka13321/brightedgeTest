@@ -1,0 +1,264 @@
+html, body {
+  background-color: #FCFAFB;
+  text-align: center;
+}
+
+#content.row {
+  margin-top: -4em;
+}
+
+#navMargin {
+  max-width: 100%;
+  margin-bottom: 0px;
+  background-color: #009DDA;
+}
+
+.nav {
+  margin-right: 10em;
+  margin-left: 10em;
+  text-align: left;
+}
+.navBrand {
+  color: white;
+}
+
+.wrapper {
+  margin-right: 10em;
+  margin-left: 10em;
+  background-color: #FFFFFF;
+  border-right: 0.1em solid #00BFFF;
+  border-left: 0.1em solid #00BFFF;
+  box-shadow: 1em 0 1em #e6e6e6, -1em 0 1em #e6e6e6;
+}
+.banner {
+  bottom: 3em;
+  right: 0.4em;
+  max-width: 59.5em;
+  position: relative;
+}
+
+.leftSide.col-xs-12.col-md-8 {
+  text-align:left;
+  padding-left: 2.5em;
+  padding-right: 1em;
+  border-right: 0.1em solid gray;
+}
+
+.info {
+  top: 5em;
+}
+.rightSide.col-xs-6.col-md-4 {
+  /*padding-left: -5em;*/
+}
+
+.demo {
+  background-image: url('../assets/demoBackground.svg');
+  background-repeat: no-repeat;
+  height: 10em;
+  width: 18em;
+  font-size: 1.4em;
+  margin-left: -0.4em;
+}
+
+.demoText {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.6em; 
+  margin-right: 3.2em;
+  margin-left: 1em;
+}
+
+.demoButton {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 2em;
+  margin-top:1.5em;
+  height: 2em;
+  width: 12em;
+  opacity: 1;
+}
+.demoButton:hover {
+  opacity:0.85;
+}
+
+.manifestoDiv {
+  border-top: 0.1em solid gray;
+  border-bottom: 0.1em solid gray;
+  height: 16em;
+  width: 22em;
+  margin-top: 1.5em;
+}
+
+.interested {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.manifestoImg {
+  margin-top: 0.5em;
+  margin-left: 1.7em;
+  height: 5em;
+  width: 5em;
+  float: left;
+}
+
+.manifesto {
+  text-align: left;
+  float: right;
+  padding-left: 1em;
+  padding-right: 3em;
+  width: 15em;
+}
+
+.manifestoBold {
+  font-size: 1.1em;
+}
+
+.manifestoIpsum {
+  font-size: 0.8em;
+}
+
+.modal-content {
+    text-align: center;
+    margin-top: 2em;
+    position:relative;
+    height: 33em;
+    width: 40em;
+  }
+
+.demoHeader {
+  font-size: 1.4em;
+}
+
+.demoInput {
+  margin: 0.5em 0 0.5em 0;
+  display: inline-block;
+  width: 16em;
+  font-size: 1.3em;
+}
+
+.notes {
+  height: 4em;
+  font-size: 0.7em;
+  width: 15em;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  nav {
+    height: 6em;
+  }
+  .navbar-header {
+    margin-top: 1.2em;
+  }
+  .navBrand {
+    font-size: 1.7em;
+  }
+  .navColumn.col-xs-12.col-md-8 {
+    margin-left:-10em;
+  }
+  .wrapper {
+    margin-right: 0em;
+    margin-left: 0em;
+    background-color: #FFFFFF;
+    border-right: none;
+    border-left: none;
+  }
+  .row{
+    margin-right: 0em;
+  }
+  .leftSide.col-xs-12.col-md-8 {
+    text-align:left;
+    border-right: none;
+  }
+  .modal-content {
+    text-align: center;
+    margin-top: 7.5em;
+    margin-left: -1.5em;
+    position:relative;
+    height: 18em;
+    width: 50em;
+    font-size: 1em;
+  }
+  .demoInput {
+    display: inline-block;
+    width: 12em;
+    font-size: 1.2em;
+  }
+
+  .notes {
+    margin: 0 0 -0.8em 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .demo {
+    margin-left: 2em;
+    height: 30em;
+    width:46em;
+  }
+  .demoText {
+    margin-right: 2em;
+    margin-left: 3em;
+    font-size: 2.3em;
+  }
+  .demoButton {
+    opacity: 1;
+    margin-top: 8em;
+    height: 5em;
+    width: 48em;
+  }
+  .demoButton:hover {
+    opacity: 0.85;
+  }
+
+  .manifestoDiv {
+    border-top: none;
+    border-bottom: none;
+    margin-left: 5em;
+    height: 30em;
+    width: 60em;
+    margin-top: -6em;
+  }
+
+  .interested {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .manifestoImg {
+    margin-top: 0.5em;
+    margin-left: 6em;
+    height: 18em;
+    width: 18em;
+    float: left;
+  }
+
+  .manifesto {
+    text-align: left;
+    float: right;
+    padding-left: 5em;
+    padding-right: 1em;
+    width: 34em;
+  }
+
+  .manifestoBold {
+    font-size: 2.8em;
+  }
+
+  .manifestoIpsum {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+  .modal-content {
+    text-align: center;
+    margin-top: 7.5em;
+    margin-left: -1.5em;
+    position:relative;
+    height: 30em;
+    width: 17em;
+    font-size: 3em;
+  }
+}
