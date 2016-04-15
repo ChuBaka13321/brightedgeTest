@@ -182,6 +182,9 @@ html, body {
     width: 50em;
     font-size: 1em;
   }
+  .demoHeader {
+    font-size: 1.0em;
+  }
   .demoInput {
     display: inline-block;
     width: 12em;
@@ -257,8 +260,13 @@ html, body {
     margin-top: 7.5em;
     margin-left: -1.5em;
     position:relative;
-    height: 30em;
+    height: 25em;
     width: 17em;
     font-size: 3em;
+  }
+  .submit {
+    width: 8em;
+    height: 1.8em;
+    font-size: 0.8em;
   }
 }
