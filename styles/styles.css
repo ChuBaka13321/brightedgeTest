@@ -47,9 +47,6 @@ html, body {
 .info {
   top: 5em;
 }
-.rightSide.col-xs-6.col-md-4 {
-  /*padding-left: -5em;*/
-}
 
 .demo {
   background-image: url('../assets/demoBackground.svg');
@@ -57,7 +54,6 @@ html, body {
   height: 10em;
   width: 18em;
   font-size: 1.4em;
-  margin-left: -0.4em;
 }
 
 .demoText {
@@ -145,7 +141,6 @@ html, body {
 }
 
 
-
 @media only screen and (max-width: 1200px) {
   nav {
     height: 6em;
@@ -197,20 +192,21 @@ html, body {
 }
 @media only screen and (max-width: 1000px) {
   .demo {
-    margin-left: 2em;
-    height: 30em;
-    width:46em;
+    margin-left: 5em;
+    height: 25em;
+    width:40em;
   }
   .demoText {
     margin-right: 2em;
     margin-left: 3em;
-    font-size: 2.3em;
+    font-size: 2.1em;
   }
   .demoButton {
     opacity: 1;
-    margin-top: 8em;
-    height: 5em;
-    width: 48em;
+    margin-top: 6em;
+    margin-left: 3.5em;
+    height: 4em;
+    width: 30em;
   }
   .demoButton:hover {
     opacity: 0.85;
@@ -219,41 +215,42 @@ html, body {
   .manifestoDiv {
     border-top: none;
     border-bottom: none;
-    margin-left: 5em;
-    height: 30em;
-    width: 60em;
-    margin-top: -6em;
+    margin-left: 7.5em;
+    height: 28em;
+    width: 55em;
+    margin-top: 2em;
   }
 
   .interested {
     text-align: center;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.8em;
+    margin-top: -0.4em;
   }
 
   .manifestoImg {
-    margin-top: 0.5em;
-    margin-left: 6em;
-    height: 18em;
-    width: 18em;
+    margin: 2em 0 0 8em;
+    height: 13em;
+    width: 13em;
     float: left;
   }
 
   .manifesto {
     text-align: left;
     float: right;
-    padding-left: 5em;
+    margin-left: 0em;
     padding-right: 1em;
-    width: 34em;
+    width: 32em;
   }
 
   .manifestoBold {
-    font-size: 2.8em;
+    margin: 1em 1em 0 0;
+    font-size: 2.2em;
   }
 
   .manifestoIpsum {
-    margin-top: 1em;
-    font-size: 2em;
+    margin: 1em 1em 0 0;
+    font-size: 1.6em;
   }
   .modal-content {
     text-align: center;

@@ -76,12 +76,12 @@
             <strong class = 'demoHeader'>Schedule a Free Demo Today</strong>
           </div>
           <div class="modal-body">
-            <form>
-              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="First Name"></div>
-              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Last Name"></div>
-              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Company"></div>
-              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Phone"></div>
-              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Annual Revenue"></div>
+            <form onsubmit = 'storeDetails()'>
+              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="First Name" id = 'fname'></div>
+              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Last Name" id = 'lname'></div>
+              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Company" id = 'company'></div>
+              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Phone" id = 'phone'></div>
+              <div class ='demoInput'><input required="required" class='inputWidth' placeholder="Annual Revenue" id = 'revenue'></div>
               <div class ='demoInput'><textarea class='notes' placeholder="Additional Notes"></textarea></div>
               <div><input type='submit' class='btn btn-warning submit' value='Submit'></div>
             </form>
@@ -95,11 +95,22 @@
   </body>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script>
-  function myFunction() {
-      // window.alert('hi')
-      // var myWindow = window.open("", "MsgWindow", "width=400,height=400");
-      // myWindow.document.write("<form>First Name: <br><input type='text' name='fname'><br>Last Name: <br><input type='text' name='fname'><br>Email Address: <br><input type='text' name='fname'><br>Company: <br><input type='text' name='fname'><br>Phone: <br><input type='text' name='fname'><br>Annual Revenue: <br><input type='text' name='fname'><br>Additional Notes: <br><input type='text' name='fname'><input type='submit' value='Submit'></form>");
-  }
+    function storeDetails() {
+      var person = document.getElementById('lname').value + ', '  + document.getElementById('fname').value;
+      var company = document.getElementById('company').value;
+      var phone = document.getElementById('phone').value;
+      var revenue = document.getElementById('revenue').value;
+      var notes = document.getElementsByClassName('notes').value || "";
+      var personInfo = {
+        'name' : person,
+        'company' : company,
+        'phone' : phone,
+        'revenue' : revenue,
+        'notes' : notes
+      }
+      console.log('personInfo' ,personInfo)
+      localStorage.setItem(person, personInfo);
+    }
   </script>
 </html>
 
